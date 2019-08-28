@@ -4,47 +4,59 @@
 This is a simple UNIX command line interpreter that replicates functionalities of the shell.
 
 ## Installation
-1. Clone this repository in your terminal. 
-![clone button on github](https://postimg.cc/5HRwFLpg)
+1. Clone this repository in your terminal.
+
+<img src="./git_clone.png" width="35%" />
+
 2. Compile with the following flags:
+
 ```
 simple_shell$ gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
 ```
+
 3. Run program.
+
 ```
 simple_shell$ ./hsh
 ```
+
 After successful compilation, the shell is launched and ready for both interactive and non-interactive executions.
 
-#####Interactive Mode 
+### Interactive Mode 
 Run program and wait for the prompt `$` to appear. From there, type desired commands. Exit program with the exit command or `Ctrl+D`. 
 
-#####Non-Interactive Mode
+### Non-Interactive Mode
 From command line, use `echo` command and pipe into the program like so:
-```
+
+```bash
 simple_shell$ echo "command" | ./hsh
 ```
-##Built-ins Supported
+
+## Built-ins Supported
 Command Name | Description | Sypnosis 
 :---: | :---: | :---:
 `exit` | Cause normal process termination | `exit`
 `env` | Run a program in a modified environment | `env [OPTION]... [-] [NAME=VALUE]... [COMMAND [ARG]...]`
 `ls` | List directory contents | `ls [OPTION]... [FILE]...`
 
-##Examples
-```
+## Examples
+
+```bash
 $ /bin/pwd
 /home/vagrant/simple_shell
 ```
-```
+
+```bash
 $ env
 *prints whole environment*
 ```
-```
+
+```bash
 $ ls
 ```
 
-##Files
+## Files
+
 File Name | Description
 :---: | :---:
 [coolshell.h](./coolshell.h) | Header file with function prototypes, structs and standard libraries.
@@ -56,9 +68,11 @@ File Name | Description
 [coolshell_main.c](./coolshell_main.c) | Main Function that executes command line operations.
 [coolshell_path_process.c](coolshell_path_process.c) | Functions that gets, tokenizes, counts, and concatenates an environmental variable string as well as checking the status of a file.
 
-##About
+## About
 This program was created by:
 * **Pierre Beaujuge**
+
 [GitHub: pierrebeaujuge](https://github.com/PierreBeaujuge) | [Medium: pierre.beaujuge](https://medium.com/@pierre.beaujuge) | Email: pierre.beaujuge@gmail.com
 * **Joan Cruz**
+
 [GitHub: joancruzz](https://github.com/joancruzz) | [LinkedIn: Joan Cruz](https://www.linkedin.com/in/joancruzprofessionalprofile/) | Email: joan.cruz95@gmail.com
