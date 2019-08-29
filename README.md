@@ -68,7 +68,7 @@ File Name | Description
 :---: | :---:
 [coolshell.h](./coolshell.h) | Header file with function prototypes, structs and standard libraries.
 [coolshell_buf_process.c](./coolshell_buf_process.c) | Functions that read, tokenize and count user input.
-[coolshell_builtins.c](./coolshell_builtins.c) | Functions that checks built-ins, print environments and exit shell.
+[coolshell_builtins.c](./coolshell_builtins.c) | Functions that check built-ins, print environments and exit shell.
 [coolshell_handle_cmd.c](./coolshell_handle_cmd.c) | Functions that handle command with or without PATH directory strings and execute commands.
 [coolshell_helpers_1.c](./coolshell_helpers_1.c) | Functions that duplicate and concatenate strings and fill memory with a constant bytes. 
 [coolshell_helpers_2.c](coolshell_helpers_2.c) | Functions that return length and turn integers into a string and write characters to standard output.
