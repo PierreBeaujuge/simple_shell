@@ -37,7 +37,7 @@ Command Name | Description | Sypnosis
 :---: | :---: | :---:
 `exit` | Cause normal process termination | `exit`
 `env` | Run a program in a modified environment | `env [OPTION]... [-] [NAME=VALUE]... [COMMAND [ARG]...]`
-`ls` | List directory contents | `ls [OPTION]... [FILE]...`
+`help` | Retrieve informational text on how use builtin | `[-dms] [pattern ...]`
 
 ## Examples
 
@@ -55,6 +55,11 @@ $ env
 $ ls
 ```
 
+```bash
+$ help exit
+exit the shell.
+```
+
 ## Files
 
 File Name | Description
@@ -67,6 +72,7 @@ File Name | Description
 [coolshell_helpers_2.c](coolshell_helpers_2.c) | Functions that return length and turn integers into a string and write characters to standard output.
 [coolshell_main.c](./coolshell_main.c) | Main Function that executes command line operations.
 [coolshell_path_process.c](coolshell_path_process.c) | Functions that gets, tokenizes, counts, and concatenates an environmental variable string as well as checking the status of a file.
+[man_1_simple_shell](./man_1_simple_shell) | Simple Shell man page
 
 ## About
 This program was created by:

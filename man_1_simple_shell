@@ -1,0 +1,55 @@
+.TH SHELL 1 "24 August 2019" "HOLBERTON SCHOOL" "Simple Shell Man Page"
+.SH NAME
+.B Simple Shell
+- simple UNIX command line interpreter
+.SH SYNOPSIS
+.B $ [command] -[options] [arguments]
+.SH DESCRIPTION
+Simple Shell is a simplified version of the UNIX shell that reads, interprets, and executes a line input as potential command arguments. Users can type directly to the shell or pipe in shell scripts.
+.sp
+.B Run
+.RS
+Compile the program with the following:
+.PP
+.B gcc -Wall -Werror -Wextra -pendantic *.c -o hsh
+.PP
+Execute the program with:
+.PP
+.B ./hsh
+.SH BUILTIN COMMANDS
+Builtin commands that replicate the original UNIX shell:
+.PP
+.B - exit
+Terminates the program.
+.sp
+.B - env
+Prints the enviromental variables and their values to standard output.
+.sp
+.B - help
+Retrieve informational text on how use builtin
+.SH EXAMPLES
+.B $ ls -l
+.RS
+will output a list of files in the current working directory with long formatting.
+.RE
+.B echo "pwd" | ./hsh
+.RS
+will output entire path of the current working directory in non-interactive mode.
+.RE
+.B $ RTFM
+.RS
+will output ./hsh: 1: RTFM: not found.
+.RE
+.B $ exit
+.RS
+will exit the Simple Shell.
+.RE
+.B CTRL-D
+.RS
+will exit the Simple Shell.
+.SH  NOTES
+The Simple Shell is written entirely in the C Programming Language. This program handles simple commands and does not entirely replicate the real shell.
+.SH BUGS
+No known bugs. Report bugs to...
+.SH AUTHOR
+Pierre Beaujuge, Joan Cruz
