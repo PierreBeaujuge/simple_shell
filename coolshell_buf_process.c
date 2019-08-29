@@ -21,7 +21,7 @@ char *prompt_n_read(char *path_str, char **array_path)
 {
 	char *buf = NULL;
 	size_t bufsize = 0;
-	int status = 0;
+	int i = 0, status = 0;
 
 	if (isatty(STDIN_FILENO) == 1)
 		_print("$ ");
@@ -34,6 +34,14 @@ char *prompt_n_read(char *path_str, char **array_path)
 		if (isatty(STDIN_FILENO) == 1)
 			_print("\n");
 		exit(0);
+	}
+	for (i = 0; buf[i] != '\0'; i++)
+	{
+		if (buf[0] == '#' || (buf[i] == ' ' && buf[i + 1] == '#'))
+		{
+			buf[i] = '\0';
+			break;
+		}
 	}
 	return (buf);
 }

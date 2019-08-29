@@ -25,6 +25,7 @@ int _status(char *str_buf_path);
 char *_strcat(char *dest, char *src);
 char *_memset(char *s, char b, unsigned int n);
 char *_strdup(char *str);
+int _strcmp(char *s1, char *s2);
 int _putchar(char c);
 int _print(char *str);
 void print_number(int n);
@@ -53,6 +54,8 @@ void (*get_builtins_func(char *s))(char **, char *, char *, char **, int);
 void env_(char **array_buf, char *buf, char *path_str, char **array_path,
 int exit_status);
 void exit_(char **array_buf, char *buf, char *path_str, char **array_path,
+int exit_status);
+void help_(char **array_buf, char *buf, char *path_str, char **array_path,
 int exit_status);
 
 #endif

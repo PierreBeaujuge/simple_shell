@@ -94,3 +94,23 @@ char *_strcat(char *dest, char *src)
 	dest = tmp;
 	return (dest);
 }
+
+/**
+ * _strcmp - function that compares two strings
+ * @s1: pointer to string (or literal string) to be compared
+ * @s2: pointer to string (or literal string) to be compared
+ * Return: 0 if the two strings are identical, 1 otherwise
+ */
+
+int _strcmp(char *s1, char *s2)
+{
+	while ((*s1 != '\0' && *s2 != '\0') && *s1 == *s2)
+	{
+		s1++;
+		s2++;
+	}
+	if (*s1 == *s2)
+		return (0);
+	else
+		return (1);
+}

@@ -73,6 +73,7 @@ int  handle_path_cmd(char **av, int counter, char **array_buf)
 		_print(": ");
 		_print(array_buf[0]);
 		_print(": not found\n");
+		exit_status = 127;
 		free(array_buf);
 	}
 	else if (status == 0)
@@ -111,6 +112,8 @@ int handle_nopath_cmd(char **array_path, char **av, char **array_buf,
 			exit_status = fork_n_exec(str_buf_path, array_buf);
 			free(str_buf_path);
 		}
+		else
+			exit_status = 127;
 		free(array_buf);
 	}
 	else
