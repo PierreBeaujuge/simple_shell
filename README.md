@@ -52,7 +52,9 @@ $ env
 ```
 
 ```bash
-$ ls
+$ ls -l
+-rw-rw-r-- 1 vagrant vagrant   158 Aug 28 16:35 directory_1
+-rw-rw-r-- 1 vagrant vagrant  2139 Aug 29 02:29 directory_2
 ```
 
 ```bash
